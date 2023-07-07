@@ -11,17 +11,20 @@
 </head>
 
 <body class="main-bg">
+
+    <input type="checkbox" aria-label="Close menu" role="button" class="close-menu" id="close-menu">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
         <h1><a href="">LOGO</a></h1>
         <nav>
-            <ul>
+            <ul onclick="getElementById('close-menu').checked = false">
                 <li><a href="#intro">intro</a></li>
                 <li><a href="#top 3">data</a></li>
                 <li><a href="#grid-one">top 3</a></li>
                 <li><a href="#gallery">gallery</a></li>
-                <li><a href="">work</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#pricing">pricing</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </div>
@@ -76,10 +79,131 @@
         </div>
     </section>
 
-    <section class="section white-bg" id="gallery">
-        <div class="main-content">
-            <p>Teste</p>
+    <section class="section white-bg grid-one" id="gallery">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-heading ">gallery</h2>
+            <div class="grid">
+                    <div class="gallery-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1686779700468-65bca92f0ef1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4ODYwMDIyMA&ixlib=rb-4.0.3&q=80&w=360" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1686174097378-e3b5ce2ccf06?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4ODYwMDMxMA&ixlib=rb-4.0.3&q=80&w=360" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1684741891105-198c9a952a57?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4ODYwMDM0MQ&ixlib=rb-4.0.3&q=80&w=360" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1686656446001-41af3994216b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4ODYwMDM3MA&ixlib=rb-4.0.3&q=80&w=360" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1685316143415-7a17667e3829?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4ODYwMDUxOQ&ixlib=rb-4.0.3&q=80&w=360" alt="random image from unsplash">
+                    </div>    
+                    <div class="gallery-img">
+                            <img src="https://images.unsplash.com/photo-1686704223360-4cd3d7dcd7b9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4ODYwMDU0NA&ixlib=rb-4.0.3&q=80&w=360" alt="random image from unsplash">
+                    </div>
+              </div>
         </div>
     </section>
+
+    <section class="main-bg section" id="pricing">
+        <div class="main-content top3-content">
+        <h2>Pricing</h2>
+        <p>
+            Companies have a lot of disparate data that they cannot make sense of. This data can be used to get valuable insights, and data scientists help to do exactly that. Data scientists gather large amounts of structured and unstructured data and analyze them to develop valuable insights
+        </p>
+        <p>
+            Data scientists also have to use visual presentation techniques to make other people understand the trends and data, so they must also have presentation skills. There is no specific industry for data scientists, as they are in deman
+        </p>
+
+        <div class="responsive-table">
+        <table>
+            <caption>Pricing table</caption>
+
+            <thead>
+                <tr>
+                <th>Title 1</th>
+                <th>Title 2</th>
+                <th>Title 3</th>
+                <th>Title 4</th>
+                <th>Title 5</th>
+                </tr>
+            </thead>
+
+            <tbody>
+               <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+               </tr> 
+               <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+               </tr>
+               <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+               </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="6">Testando</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+        </div>
+    </section>
+
+    <section class="white-bg section" id="contact">
+        <div class="main-content intro-content">
+          <div class="intro-text-content">
+          <h2>JANUARY BRING US FIREFOX 85</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi velit dolorum, ullam consectetur sunt dolorem facilis alias necessitatibus? Inventore eum perferendis</p>
+          </div>
+      
+          <div class="intro-img">
+          <img src="img/undraw_static_assets_rpm6.svg" alt="Imagem ilustrativa de html, css e java script">
+          </div>
+          <div class="contact-form">
+            <fieldset class="form-grid">
+                <legend>Contact me</legend>
+                <div class="form-group full-width">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Your name">
+                </div>
+                <div class="form-group full-width">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                </div>
+                <div class="form-group full-width">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Your e-mail">
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit">Send message</button>
+                </div>
+            </fieldset>
+          </div>
+        </div>
+
+      </section>
+
+      <footer class="main-bg footer">
+        <p>Footer</p>
+      </footer>
+    
 </body>
 </html>
